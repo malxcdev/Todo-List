@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main>
+    <div id="overlay" class="overlay hidden"></div>
+    <div class="hidden" id="nuevaTarea" >
+      <span id="btnClose">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </span>
+      <h3>¿Que harás hoy?</h3>
+      <p>Ingrese la tarea que desea ingresar</p>
+      <input id="inputTarea" type="text">
+      <button id="btnRegistrar">Registrar</button>
+    </div>
+    <div id="contenedorPrincipal">
+      <div id="menuSuperior">
+        <ul>
+          <li><a href="#">Messages</a></li>
+          <li class="active-font"><a href="#">Today's Task</a></li>
+          <li><a href="#">Last Activity</a></li>
+        </ul>
+      </div>
+      <div id="contenido">
+        <div id="headerTareas">
+          <div>
+            <h2>Today's Task</h2>
+            <p class="fechaHoy">Wednesday, 11 May</p>
+          </div>
+          <div>
+            <button id="btnNuevaTarea">+ New Task</button>
+          </div>
+        </div>
+        <div id="menuTareas">
+          <ul>
+            <li class="active-font-blue"><a href="#">All</a></li>
+            <li><a href="#">Open</a></li>
+            <li><a href="#">Closed</a></li>
+            <li><a href="#">Archived</a></li>
+          </ul>
+        </div>
+        <div id="listaTareas">
+          <ul id="contenedorTareas">
+            <li>
+              <div class="tareaContenedor">
+                <h3 class="tareaTitulo">
+                  Create Firefreame
+                </h3>
+                <p class="tareaContenido">Crypto Wallet Redesign</p>
+              </div>
+              <span class="check"><i class="icono fa-regular fa-circle-check"></i></span>
+              <span class="delete">
+                <i class="fa-solid fa-circle-minus"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
